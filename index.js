@@ -16,7 +16,7 @@ const port = 5000;
 
 // 1. CORS
 const allowedOrigins = [
-  'https://hrm.info.aipencil.name.vn',
+  'https://hrm-info.aipencil.name.vn',
   'http://localhost:3000'
 ];
 app.use(cors({
@@ -28,8 +28,6 @@ app.use(cors({
     }
   }
 }));
-
-// Bỏ app.use('/uploads', ...) vì không dùng file tĩnh nữa
 
 // 2. Cấu hình Cloudinary
 // THÊM CÁC DÒNG LOG NÀY ĐỂ DEBUG CHẮC CHẮN BIẾN ĐƯỢC LOAD
